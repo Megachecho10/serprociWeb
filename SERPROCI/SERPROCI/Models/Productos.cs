@@ -77,6 +77,11 @@ namespace SERPROCI.Models
         [Display(Name = "Fecha Entrada")]
         public DateTime FechaEntrada { get; set; }
 
+        [Display(Name = "Precio")]
+        [Required(ErrorMessage = "El Campo {0} Es Requqerido")]
+        [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = true)]
+        public decimal Precio { get; set; }
+
 
 
 
