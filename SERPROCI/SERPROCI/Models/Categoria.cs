@@ -19,5 +19,8 @@ namespace SERPROCI.Models
         [StringLength(50)]
         public string CategoriaName { get; set; }
 
+
+        public virtual ICollection<Productos> Productos {get; set;}
+
     }
 }

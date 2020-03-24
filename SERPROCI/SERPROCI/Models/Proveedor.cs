@@ -43,5 +43,7 @@ namespace SERPROCI.Models
         [StringLength(60)]
         public string CorreoElectronico { get; set; }
 
+
+        public virtual ICollection<Productos> Productos {get; set;}
     }
 }

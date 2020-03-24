@@ -19,5 +19,7 @@ namespace SERPROCI.Models
         [StringLength(50)]
         public string GrupoName { get; set; }
 
+        public virtual ICollection<Productos> Productos {get; set;}
+
     }
 }

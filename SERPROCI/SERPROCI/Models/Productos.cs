@@ -86,7 +86,6 @@ namespace SERPROCI.Models
         [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = true)]
         public decimal Iva { get { return 0; } }
 
-
         [Display(Name = "Activo")]
         public Byte? Activo { get; set; }
 

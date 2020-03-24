@@ -18,5 +18,7 @@ namespace SERPROCI.Models
         [Index(IsUnique = true)]
         [StringLength(50)]
         public string UmdName { get; set; }
+
+        public virtual ICollection<Productos> Productos { get; set;}
     }
 }
