@@ -13,6 +13,9 @@ namespace SERPROCI.Models
         [Display(Name = "Id Cliente")]
         public int IdCliente { get; set; }
 
+        [Display(Name = "Id TipoCliente")]
+        public int IdTipoCliente { get; set; }
+
         [Display(Name = "Nombre Cliente")]
         [Index(IsUnique = true)]
         [StringLength(100)]
@@ -47,7 +50,9 @@ namespace SERPROCI.Models
         [Required(ErrorMessage = "El Campo {0} Es Requqerido")]
         public string Direccion { get; set; }
 
-        
+
+        [ForeignKey("IdTipoCliente")]
+        virtual public TipoCliente TipoCliente { get; set; }
 
     }
 }

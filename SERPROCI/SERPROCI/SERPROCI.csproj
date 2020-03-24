@@ -140,6 +140,7 @@
     <Compile Include="Models\Productos.cs" />
     <Compile Include="Models\Proveedor.cs" />
     <Compile Include="Models\Servicio.cs" />
+    <Compile Include="Models\TipoCliente.cs" />
     <Compile Include="Models\TipoPedido.cs" />
     <Compile Include="Models\TipoServicio.cs" />
     <Compile Include="Models\Umd.cs" />
