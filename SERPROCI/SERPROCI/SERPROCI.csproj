@@ -133,6 +133,7 @@
     </Compile>
     <Compile Include="Models\Almacen.cs" />
     <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\Clientes.cs" />
     <Compile Include="Models\Empresa.cs" />
     <Compile Include="Models\Grupo.cs" />
     <Compile Include="Models\Marca.cs" />
