@@ -20,11 +20,13 @@ namespace SERPROCI.Models
         public string ProveedorName { get; set; }
 
         [Display(Name = "Razon Social")]
+        [Index(IsUnique = true)]
         [Required(ErrorMessage = "EL CAMPO {0} ES REQUERIDO")]
         [StringLength(50)]
         public string RazonSocial { get; set; }
 
         [Display(Name = "Numero Ruc")]
+        [Index(IsUnique = true)]
         [Required(ErrorMessage = "EL CAMPO {0} ES REQUERIDO")]
         [StringLength(50)]
         public string NumeroRuc { get; set; }
