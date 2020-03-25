@@ -137,6 +137,7 @@
     <Compile Include="Models\Empresa.cs" />
     <Compile Include="Models\Grupo.cs" />
     <Compile Include="Models\Marca.cs" />
+    <Compile Include="Models\MasterPedido.cs" />
     <Compile Include="Models\Productos.cs" />
     <Compile Include="Models\Proveedor.cs" />
     <Compile Include="Models\Servicio.cs" />
