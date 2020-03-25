@@ -29,9 +29,15 @@ namespace SERPROCI.Models
 
         [Display(Name = "Monto")]
         [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = true)]
-        public decimal Monto { get { return 0; } }
+        public decimal Monto { get { return Cantidad * Productos.Precio; } }
 
+        [ForeignKey("IdProducto")]
+        public virtual Productos Productos { get; set; }
 
+        [ForeignKey("IdMasterPedido")]
+        public virtual MasterPedido MasterPedido { get; set; }
 
+        [ForeignKey("IdServicio")]
+        public virtual Servicio Servicio { get; set; }
     }
 }
