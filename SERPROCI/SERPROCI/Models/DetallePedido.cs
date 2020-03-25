@@ -13,8 +13,25 @@ namespace SERPROCI.Models
         [Display(Name = "Id Detalle Pedido")]
         public int IdDetallePedido { get; set; }
 
-        [Display(Name = "Id ProSer")]
-        public int IdProser { get; set; }
+        [Display(Name = "Id Producto")]
+        public int IdProducto { get; set; }
+
+        [Display(Name = "Id Pedido")]
+        public int IdMasterPedido { get; set; }
+
+        [Display(Name = "Id Servicio")]
+        public int IdServicio { get; set; }
+
+        [Display(Name = "Cantidad")]
+        [Required(ErrorMessage = "El Campo {0} Es Requqerido")]
+        [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = true)]
+        public decimal Cantidad { get; set; }
+
+        [Display(Name = "Monto")]
+        [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = true)]
+        public decimal Monto { get { return 0; } }
+
+
 
     }
 }
