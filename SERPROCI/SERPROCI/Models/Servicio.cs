@@ -19,7 +19,7 @@ namespace SERPROCI.Models
         [Display(Name = "Servicio")]
         [StringLength(50)]
         [Index(IsUnique = true)]
-        [Required(ErrorMessage = "El CAMPO {0} REQUERIDO")]
+        [Required(ErrorMessage = "El CAMPO {1} REQUERIDO")]
         [Index(IsUnique =true)]
         public string ServicioName { get; set; }
 
