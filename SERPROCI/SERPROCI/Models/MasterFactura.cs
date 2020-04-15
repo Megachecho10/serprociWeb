@@ -9,6 +9,11 @@ namespace SERPROCI.Models
     [Table("MasterFactura")]
     public class MasterFactura
     {
+        [Key]
+        [Display(Name = "Id MasterFactura")]
+        public int IdMasterFactura { get; set; }
+
+         [Display(Name = "")]
 
     }
 }
