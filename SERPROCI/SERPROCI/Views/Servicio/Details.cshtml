@@ -1,0 +1,42 @@
+﻿@model SERPROCI.Models.Servicio
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Servicio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoServicio.TipoServicioName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoServicio.TipoServicioName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServicioName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServicioName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionServicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionServicio)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdServicio }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,42 @@
+﻿@model SERPROCI.Models.Almacen
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Almacen</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Empresa.EmpresaName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empresa.EmpresaName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodigoAlmacen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoAlmacen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreAlmacen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreAlmacen)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdAlmacen }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

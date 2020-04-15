@@ -17,13 +17,46 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Nombre de la aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("SERPROCI", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Empresa", "Index", "Empresa")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Datos
+                            <samp class="caret"></samp>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown">
+                            </li>
+                            <li>@Html.ActionLink("Almacen", "Index", "Almacen")</li>
+                            <li>@Html.ActionLink("Areas", "Index", "Areas")</li>
+                            <li>@Html.ActionLink("Sub-Areas", "Index", "SubAreas")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Proveedores", "Index", "Proveedores")</li>
+                            <li>@Html.ActionLink("Grupos", "Index", "Grupos")</li>
+                            <li>@Html.ActionLink("Marcas", "Index", "Marcas")</li>
+                            <li>@Html.ActionLink("UMD", "Index", "Umds")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Productos", "Index", "Productos")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Presupuesto General
+                            <samp class="caret"></samp>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown">
+                            </li>
+                            <li>@Html.ActionLink("Periodos", "Index", "PresupuestoPeriodos")</li>
+                            <li>@Html.ActionLink("Presupuesto", "Index", "PresupuestoGenMaesters")</li>
+                            <li class="divider"></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -32,7 +65,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            <p>&copy; @DateTime.Now.Year - Multiservicio SERPROCI, S.A</p>
         </footer>
     </div>
 

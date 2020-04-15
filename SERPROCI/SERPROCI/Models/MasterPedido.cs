@@ -42,7 +42,6 @@ namespace SERPROCI.Models
         [Display(Name = "Fecha Anulado")]
         public DateTime FechaAnulado { get; set; }
 
-
         [ForeignKey("IdTipoPedido")]
         public virtual TipoPedido TipoPedido { get; set; }
     }
